@@ -10,7 +10,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - _install-elk.yml_
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -20,17 +20,17 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, otherwise known as the "D*mn Vulnerable Web Application".
 
 Load balancing ensures that the application will be **_highly Functional and available_**, in addition to restricting **_traffic_** to the network.
 - _What aspect of security do load balancers protect? What is the advantage of a jump box?_
   - **_Load Balancers make the network more resilient by routing traffic elswhere when the server is unavailable or unusable._**
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the **_network_** and system **_system logs_**.
-- _What does Filebeat watch for?_
-  - **_Filebeat monitors log files and specific locations, collects data, and sends data off to be indexed in either Elasticsearch or Logstash._**
-- _What does Metricbeat record?_
-  - **_Metricbeat records metrics and statistics and pushes them to a specific, pre-set output._**
+
+- **_Filebeat will monitor log files and specific locations, collect data, and send data off to be indexed in either Elasticsearch or Logstash._**
+
+- **_Metricbeat will record metrics and statistics and push them to a specific, pre-set output._**
 
 The configuration details of each machine may be found below.
 
@@ -50,7 +50,7 @@ Only the **_Jump-Box Provisioner_** machine can accept connections from the Inte
 - **_Workstation Public IP through TCP 5601, IP: 70.113.32.23_**
 
 Machines within the network can only be accessed by **_Your personal workstation and Jump-Box Provisioner through a SSH to the Jump-Box_**.
-- _Which machine did you allow to access your ELK VM? What was its IP address?_
+- _Which machine did you allow to access your ELK VM?_
   - **_Jump-Box Provisioner IP:  10.0.0.4 via SSH port 22._**
 
 
